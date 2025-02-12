@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Session 02 | Tiy Question - 01</title>
+</head>
+<body>
+  <h5>Sample Content</h5>
+  <p>
+    A multi-tier enterprise application consists of two types of object application logic components and persistent data objects. Application logic components represent actions and define methods that perform common tasks such as calculating the order price, customer credit card billing, and so on. Session beans model the application components as they contain the logic to perform the application tasks.
+  </p>
+
+  <p>
+    It is easy and simple to manage the business data present in large organization as object rather than as relational rows in a database. Business data when treated as object are easy to handle and manage as they are compact in nature.
+  </p>
+
+  <p>
+    Entities are not associated with only EJBs and can be used in Java 2 standard edition (J2SC) environment. The difference between an Entity and a Session beans are as follows:
+    <ul type="circle">
+      <li>Entities have a client visibility and a persistent identity that is distinct from their object reference each entity is distinct from the other because of their identities. Client can use identities to pass the reference of an entity to other applications. However, this is not possible with Session beans.</li>
+      <li>Entity beans cannot accessed remotely, whereas Session beans can be accessed locally as well as remotely.</li>
+      <li>Entity's lifetime is not dependent on the application's lifetime. Entity bean have a much longer time lifetime than a client's session as it depends on how long the data is present in the database.</li>
+      <li>
+        Entities represent data in a storage that is permanent as well as fault-tolerant and hence, they are long lasting and can survive application server or database crash. This data can be reconstructed in the memory. Hence, it can be said that entity is an in-memory representation of persistent data that:
+        <ul style="list-style-image: url('./diamond.png');">
+          <li>Can be loaded from persistent store and its field populated with the stored data</li>
+          <li>Can be modified in memory to change the data values</li>
+          <li>Can be saved and correspondingly database is updated</li> 
+        </ul>
+      </li>
+    </ul>
+</p>
+</body>
+</html>
