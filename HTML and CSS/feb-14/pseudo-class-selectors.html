@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>February 14 | Pseudo Class Selector</title>
+  <style>
+    .container {
+      border: 2px solid blue;
+      padding: 16px;
+      margin-inline: auto;
+      max-width: 1200px;
+    }
+    .link-styled:link {
+      color: salmon;
+      text-decoration: none;
+    }
+    .link-styled:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+    .link-styled:active {
+      color: magenta;
+      text-decoration: none;
+    }
+    .link-styled:visited {
+      color: crimson;
+    }
+
+    /* .list-styled > li:nth-child(2n) {
+      background-color: #abc;
+    } */
+    /* .list-styled > li:nth-child(even) {
+      background-color: #abc;
+    } */
+
+    /* .list-styled > li:nth-child(2n+1) {
+      background-color: #abc;
+    } */
+    .list-styled > li:nth-child(odd) {
+      background-color: #abc;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pseudo Class Selector</h1>
+  </header>
+  <nav>
+    <a href="https://web.dev/learn/css/selectors?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fcss%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fcss%2Fselectors#pseudo-classes_and_pseudo-elements">Pseudo selector reference</a>
+  </nav>
+  <main>
+    <h2>List of pseudo classes</h2>
+    <ol>
+      <li>:link</li>
+      <li>:hover</li>
+      <li>:active</li>
+      <li>:visited</li>
+      <li>:nth-child(value)</li>
+    </ol>
+    <div class="container">
+      <a class="link-styled" href="https://example.com">See example site</a>
+      <a class="link-styled" href="https://pmsprototype.com">Another link</a>
+      <hr />
+      <ul class="list-styled">
+        <li>text - 1</li>
+        <li>text - 2</li>
+        <li>text - 3</li>
+        <li>text - 4</li>
+        <li>text - 5</li>
+        <li>text - 6</li>
+        <li>text - 7</li>
+        <li>text - 8</li>
+        <li>text - 9</li>
+      </ul>
+    </div>
+  </main>
+  <footer>&copy;All rights reserved!</footer>
+</body>
+</html>

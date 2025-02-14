@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>February 14 | Pseudo Class Selector</title>
+  <style>
+    .container {
+      border: 2px solid blue;
+      padding: 16px;
+      margin-inline: auto;
+      max-width: 1200px;
+    }
+
+    a::selection {
+      color: blue;
+    }
+
+    p::first-letter {
+      font-size: 48px;
+      color: red;
+    }
+    p::first-line {
+      font-size: 24px;
+      color: blue;
+    }
+
+    ::selection {
+      color: red;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pseudo Class Selector</h1>
+  </header>
+  <nav>
+    <a href="https://web.dev/learn/css/selectors?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fcss%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fcss%2Fselectors#pseudo-classes_and_pseudo-elements">Pseudo selector reference</a>
+  </nav>
+  <main>
+    <h2>List of pseudo elements</h2>
+    <ol>
+      <li>::selection</li>
+      <li>::first-letter</li>
+      <li>::first-line</li>
+      <li>::first-para</li>
+      <li>::placeholder</li>
+      <li>::focus</li>
+    </ol>
+    <div class="container">
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </div>
+  </main>
+  <footer>&copy;All rights reserved!</footer>
+</body>
+</html>
