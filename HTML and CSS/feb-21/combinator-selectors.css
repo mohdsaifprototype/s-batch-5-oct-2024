@@ -1,0 +1,62 @@
+body {
+  background-color: #f1a1f1;
+}
+
+.container {
+  outline: 2px solid blue;
+  padding: 20px;
+  margin: 12px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Descendant selector */
+/* Ansestor Descendent */
+.container p {
+  text-decoration: underline;
+}
+
+/* Child selector */
+/* Parent > child */
+.container > p {
+  color: red;
+}
+
+/* Sibling Selector */
+/* Element + sibling-element */
+.container + p {
+  background: skyblue;
+}
+
+button{
+  padding: 8px 12px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+
+/* Attribute Selectors */
+button[type] {
+  color: #f1f1f1;
+  border-radius: 20px;
+}
+
+button[type="button"] {
+  background-color: blue;
+}
+
+button[type="submit"] {
+  background-color: green;
+}
+
+button[type="reset"] {
+  background-color: red;
+}
+
+p[title="another"] {
+  box-shadow: 0 0 12px 0 crimson;
+}
+
+

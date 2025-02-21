@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: #f1a1f1;
+}
+
+body > nav {
+  background-color:  #714b71;
+/*   outline: 2px solid gray; */
+}
+
+.brand-logo {
+  /*! display: inline-block; */
+}
+
+.nav-links{
+  display: inline-block;
+  float: right;
+}
+
+.nav-links a{
+  display: inline-block;
+  margin-inline: 12px;color: #714b71;
+  background-color: #ffaae7;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 12px;
+  text-decoration: none;
+  box-shadow: 2px 2px 4px #777;
+}
+
+.nav-links a:hover{
+  background-color: #c984c9;
+  color: #ffd9ff;
+}
+
+a[href="#services"] {
+  position: relative;
+}
+
+a[href="#services"] ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a[href="#services"] ul>li {
+  background: blue;
+  padding: 4px;
+}
+
+a[href="#services"] ul>li:hover{
+  text-decoration: underline;
+}
+
+a[href="#services"]:hover ul {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 44px;
+}
